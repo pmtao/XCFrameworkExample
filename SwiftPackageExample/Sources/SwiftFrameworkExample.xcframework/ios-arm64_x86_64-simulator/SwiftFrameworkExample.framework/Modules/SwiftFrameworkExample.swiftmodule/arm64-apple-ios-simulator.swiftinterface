@@ -1,0 +1,11 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-module-flags: -target arm64-apple-ios14.1-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SwiftFrameworkExample
+import Foundation
+import Swift
+@_exported import SwiftFrameworkExample
+@_inheritsConvenienceInitializers @objc public class SwiftFrameworkExample : ObjectiveC.NSObject {
+  @objc public var title: Swift.String
+  @objc deinit
+  @objc override dynamic public init()
+}
