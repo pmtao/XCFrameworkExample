@@ -20,6 +20,18 @@
 		223CB679255965E4009955B0 /* SwiftPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223CB678255965E4009955B0 /* SwiftPlaceholder.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		229955F6255D7FB100B8F19D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		223CB64325594AD1009955B0 /* ObjCExampleWithSwiftPackage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjCExampleWithSwiftPackage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		223CB64625594AD1009955B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -106,6 +118,8 @@
 				223CB63F25594AD1009955B0 /* Sources */,
 				223CB64025594AD1009955B0 /* Frameworks */,
 				223CB64125594AD1009955B0 /* Resources */,
+				229955F6255D7FB100B8F19D /* CopyFiles */,
+				229955F7255D7FD900B8F19D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -165,6 +179,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		229955F7255D7FD900B8F19D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nfind \"${CODESIGNING_FOLDER_PATH}\" -name '*.framework' -print0 | while read -d $'\\0' framework \ndo \n    codesign --force --deep --sign \"${EXPANDED_CODE_SIGN_IDENTITY}\" --preserve-metadata=identifier,entitlements --timestamp=none \"${framework}\" \ndone\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		223CB63F25594AD1009955B0 /* Sources */ = {
@@ -320,8 +354,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8WBJVGLUJ4;
+				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 				INFOPLIST_FILE = ObjCExampleWithSwiftPackage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -342,8 +379,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8WBJVGLUJ4;
+				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 				INFOPLIST_FILE = ObjCExampleWithSwiftPackage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
