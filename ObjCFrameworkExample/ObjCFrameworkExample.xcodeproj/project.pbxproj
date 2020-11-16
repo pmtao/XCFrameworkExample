@@ -8,14 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		223CB69025596934009955B0 /* ObjCFrameworkExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 223CB68E25596934009955B0 /* ObjCFrameworkExample.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		223CB69825596A38009955B0 /* ObjCFrameworkExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 223CB69725596A38009955B0 /* ObjCFrameworkExample.m */; };
+		22CBDEE3255CBC9B006CC66D /* ObjCFrameworkTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CBDEE2255CBC9B006CC66D /* ObjCFrameworkTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		223CB68B25596934009955B0 /* ObjCFrameworkExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjCFrameworkExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		223CB68E25596934009955B0 /* ObjCFrameworkExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCFrameworkExample.h; sourceTree = "<group>"; };
 		223CB68F25596934009955B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		223CB69725596A38009955B0 /* ObjCFrameworkExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCFrameworkExample.m; sourceTree = "<group>"; };
+		22CBDEE1255CBC94006CC66D /* ObjCFrameworkTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCFrameworkTest.h; sourceTree = "<group>"; };
+		22CBDEE2255CBC9B006CC66D /* ObjCFrameworkTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCFrameworkTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +50,8 @@
 			isa = PBXGroup;
 			children = (
 				223CB68E25596934009955B0 /* ObjCFrameworkExample.h */,
-				223CB69725596A38009955B0 /* ObjCFrameworkExample.m */,
+				22CBDEE1255CBC94006CC66D /* ObjCFrameworkTest.h */,
+				22CBDEE2255CBC9B006CC66D /* ObjCFrameworkTest.m */,
 				223CB68F25596934009955B0 /* Info.plist */,
 			);
 			path = ObjCFrameworkExample;
@@ -133,7 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				223CB69825596A38009955B0 /* ObjCFrameworkExample.m in Sources */,
+				22CBDEE3255CBC9B006CC66D /* ObjCFrameworkTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

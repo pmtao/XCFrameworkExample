@@ -16,8 +16,4 @@ FOUNDATION_EXPORT const unsigned char ObjCFrameworkExampleVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <ObjCFrameworkExample/PublicHeader.h>
 
 
-@interface ObjCFrameworkExample : NSObject
-
-@property (nonatomic, copy) NSString *title;
-
-@end
+#import "ObjCFrameworkTest.h"
